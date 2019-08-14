@@ -260,21 +260,21 @@ El do-calculus está basado en tres reglas. Está demostrado que es un sistema d
 
 Si no somos capaces de resolver un problema con estas tres reglas, entonces no queda otra que realizar un Randomized Controlled Trial.
 
-**REGLA 1**
+**REGLA 1**  
 Si estamos interesados en entender el efecto de X en Y, y el conjunto de variables Z bloquea todos los paths de W a Y después de eliminar todos los paths que llevan a X (es decir, si W no influye en Y al hacer do(X)), entonces:
 
 P(Y | do(X), Z, W) = P(Y | do(X), Z)
 
-**Esta regla permite añadir o eliminar observaciones.**
+*Esta regla permite añadir o eliminar observaciones.*
 
-**REGLA 2**
+**REGLA 2**  
 Si un conjunto de variables Z bloquea todos los back-door paths de X a Y, entonces si condicionamos en Z, do(X) es equivalente a see(X):
 
 P(Y | do(X), Z) = P(Y | X, Z)
 
-**Esta permite sustituir intervenciones por observaciones.**
+*Esta regla permite sustituir intervenciones por observaciones.*
 
-**REGLA 3**
+**REGLA 3**  
 Si no hay paths causales de X a Y (paths que sólo contengan flechas dirigidas hacia Y), entonces:
 
 P(Y | do(X)) = P(Y)
@@ -283,7 +283,7 @@ Esto tiene sentido. Si hacemos algo que no afecta a Y, la distribución de proba
 
 P(Y | do(X), Z) = P(Y | Z)
 
-**Esta regla permite añadir o eliminar intervenciones.**
+*Esta regla permite añadir o eliminar intervenciones.*
 
 
 
@@ -424,7 +424,7 @@ Hay dos formas de calcularlo, que tienen más o menos sentido en función del ca
 
 **Controlled Direct Effect (CDE)**  
 Forzamos el valor tanto de X como de M:  
-CDE(M = 0) = P(Y = 1 | do(X = 1), do(M = 0)) - P(Y = 1 | do(X = 0), do(M = 0))
+CDE(M = 0) = P(Y = 1 | do(X = 1), do(M = 0)) - P(Y = 1 | do(X = 0), do(M = 0))  
 CDE(M = 1) = P(Y = 1 | do(X = 1), do(M = 1)) - P(Y = 1 | do(X = 0), do(M = 1))
 
 Hay un valor de CDE para cada valor de M. Se puede reportar así.
