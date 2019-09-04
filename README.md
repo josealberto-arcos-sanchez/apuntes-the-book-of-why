@@ -450,4 +450,18 @@ En general no. Si el efecto directo y el indirecto interaccionan, sólo podemos 
 
 En el caso lineal, cada flecha lleva asociada un número (el coeficiente de regresión), y el efecto de unas variables en otras, tanto directo como indirecto, se calcula directamente multiplicando esos números.
 
+---
 
+# 10. Big Data, AI and the Big Questions
+
+Este capítulo habla sobre los límites del Big Data y el machine learning, y cómo podemos complementarlos con inferencia causal (o viceversa). 
+
+Comenta, por ejemplo, que el trabajo de convertir el estimando en estimación puede ser imposible sin usar ML. 
+
+También habla de transportabilidad. De combinar resultados / datos de experimentos distintos con éxito usando grafos causales para entender dónde están las diferencias. O de usar un modelo en un lugar distinto, sin tener que partir de cero, o incluso sin tener que recolectar datos. Elias Bareinboim ha automatizado esta parte. 
+
+Comenta también que podemos hacer algo si nuestros datos no son representativos de nuestra población. Simplemente consideraremos que la toma de la muestra se ha visto influida por alguna variable. Por ejemplo, si sólo tenemos datos de gente hospitalizada, basta con añadir una flecha que vaya desde la variable "Hospitalización" hasta la nueva variable "Selección de población". Esto también lo ha trabajado Elias Bareinboim. 
+
+Compara el Deep Learning con la cueva de Platón: sólo ve sombras, y sabe predecirlas muy bien. Pero una strong AI necesita ver el mundo en 3D (causalidad), no sólo sus proyecciones (correlaciones). 
+
+Da su opinión sobre si alcanzaremos o no la IA fuerte, cómo podríamos llegar a ella y por qué no acabará con nosotros. 
