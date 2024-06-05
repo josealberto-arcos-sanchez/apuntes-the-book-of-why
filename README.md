@@ -157,9 +157,9 @@ Un confounder es una variable que afecta (causa) tanto a la causa como al efecto
 
 Si:
 
-Z -> X
-Z -> Y
-X -> Y
+Z -> X  
+Z -> Y  
+X -> Y  
 
 Z es un confounder de X e Y. Confounding significa 'mezcla'. El efecto de X sobre Y está mezclado con la relación espuria entre X e Y causada por Z.
 
